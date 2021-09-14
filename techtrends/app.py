@@ -81,7 +81,6 @@ def create():
 def healthcheck():
     '''Heart Beat - Health Check of application'''
     con = get_db_connection()
-    print('Connection opened successfully')
     response = app.response_class(
             response=json.dumps({"result":"OK - healthy"}),
             status=200,
@@ -95,9 +94,7 @@ def healthcheck():
 def metrics():
     '''Return total users and total number of database connections'''
     connection = get_db_connection()
-    print('Connection opened successfully')
     no_of_posts=connection.execute('SELECT COUNT(*) from posts').fetchone()[0]
-    print(no_of_posts)
     response = app.response_class(
             response=json.dumps({"status":"success","data":{"db_connection_count":no_of_conns,"post_count":no_of_posts}}),
             status=200,
