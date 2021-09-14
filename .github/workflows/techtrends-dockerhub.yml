@@ -24,4 +24,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: pranitbauva1997/techtrends:latest
+          tags: cmiyachi/techtrends:latest
