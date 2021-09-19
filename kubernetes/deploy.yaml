@@ -1,26 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@cmiyachi 
-nirupamait
-/
-cloud-native-techtrends
-Public
-1
-0
-0
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
 apiVersion: apps/v1
 kind: Deployment
 
@@ -43,7 +20,7 @@ spec:
       
     spec:
       containers:
-      - image: darsh1234/techtrends:latest
+      - image: miyachi/techtrends:latest
         name: techtrends
         ports:
         - containerPort: 3111

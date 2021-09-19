@@ -5,6 +5,7 @@ Vagrant.configure("2") do |config|
   
   # set the image for the vagrant box
   config.vm.box = "opensuse/Leap-15.2.x86_64"
+  config.vm.network "forwarded_port", guest: 6443, host: 6443 # API Access
   ## Set the image version
   # config.vm.box_version = "15.2.31.247"
 
