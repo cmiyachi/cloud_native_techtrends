@@ -19,3 +19,6 @@ docker logs techtrends
 172.17.0.1 - - [13/Sep/2021 16:28:01] "GET /favicon.ico HTTP/1.1" 404 -
 172.17.0.1 - - [13/Sep/2021 16:40:58] "GET /healthz HTTP/1.1" 200 -
 172.17.0.1 - - [13/Sep/2021 16:41:05] "GET /metrics HTTP/1.1" 200 -
+172.17.0.1 - - [13/Sep/2021 17:05:40] "POST /create HTTP/1.1" 302 -
+172.17.0.1 - - [13/Sep/2021 17:05:40] "GET / HTTP/1.1" 200 -
+172.17.0.1 - - [13/Sep/2021 17:05:49] "GET /metrics HTTP/1.1" 200 -
